@@ -11,7 +11,7 @@ br.open("http://www.oscn.net/dockets/Search.aspx")
 for f in br.forms():
     print f
 
-br.select_form( 'db' )
+br.select_form( 'dblist' )
 br.form[ 'db' ] = 'garfield'
 
 #Get the search results
