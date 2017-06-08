@@ -17,7 +17,7 @@ if str(frm.attrs["id"])=="sblock":
     break
     formcount=formcount+1
 br.select_form(nr=formcount)'''
-br.select_form('SelectControl')
+br.select_form('datalist')
 br.form[ 'db' ] = 'garfield'
 
 #Get the search results
