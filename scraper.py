@@ -6,7 +6,7 @@ import mechanize
 
 br.set_handle_robots( False )
 br = mechanize.Browser()
-br.open("http://www.google.com/")
+br.open("http://www.oscn.net/dockets/Search.aspx")
 for f in br.forms():
     print f
 #
