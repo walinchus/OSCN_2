@@ -24,7 +24,7 @@ for frm in br.forms():
 
         br.submit()'''
 
-br.select_form([0])
+br.select_form(nr=0)
 br.form['db'] = 'garfield'
 br.submit()
     
