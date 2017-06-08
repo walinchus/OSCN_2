@@ -13,7 +13,7 @@ for f in br.forms():
 
 formcount=0
 for frm in br.forms():  
-    if frm.class == "search-form":
+    if frm.attrs['class'] == "search-form":
         break
         formcount=formcount+1
         br.select_form(nr=formcount)
