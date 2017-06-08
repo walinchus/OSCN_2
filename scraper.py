@@ -13,16 +13,16 @@ for f in br.forms():
 
 formcount=0
 for frm in br.forms():  
-if str(frm.attrs["class"])=="search-form":
-    break
-    formcount=formcount+1
-br.select_form(nr=formcount)
+    if str(frm.attrs["class"])=="search-form":
+        break
+        formcount=formcount+1
+        br.select_form(nr=formcount)
 #br.select_form('form')
-br.form[ 'db' ] = 'garfield'
+        br.form[ 'db' ] = 'garfield'
 
 #Get the search results
 
-br.submit()
+        br.submit()
     
     
     
