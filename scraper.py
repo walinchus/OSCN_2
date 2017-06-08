@@ -2,9 +2,9 @@
 # including some code snippets below that you should find helpful
  import scraperwiki
 import lxml.html
+import mechanize
 
-
-
+br.set_handle_robots( False )
 br = mechanize.Browser()
 br.open("http://www.google.com/")
 for f in br.forms():
