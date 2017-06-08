@@ -4,8 +4,9 @@ import scraperwiki
 import lxml.html
 import mechanize
 
-br.set_handle_robots( False )
+
 br = mechanize.Browser()
+br.set_handle_robots( False )
 br.open("http://www.oscn.net/dockets/Search.aspx")
 for f in br.forms():
     print f
