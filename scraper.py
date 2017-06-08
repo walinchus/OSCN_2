@@ -10,7 +10,17 @@ br.set_handle_robots( False )
 br.open("http://www.oscn.net/dockets/Search.aspx")
 for f in br.forms():
     print f
-#
+
+br.select_form( 'db' )
+br.form[ 'db' ] = 'garfield'
+
+Get the search results
+
+br.submit()
+    
+    
+    
+    
 # # Read in a page
 # html = scraperwiki.scrape("http://foo.com")
 #
