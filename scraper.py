@@ -26,9 +26,14 @@ for frm in br.forms():
 
 br.select_form(nr=0)
 print br.form
+br['db'] = ['garfield']
+print br
+response = br.submit()
+html = response.read()
+print html
+#root = lxml.html.fromstring(html)
+#scrape_table(root)
 
-#br.form['db'] = 'garfield'
-#br.submit()
     
     
     
