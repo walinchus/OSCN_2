@@ -18,7 +18,7 @@ for frm in br.forms():
         formcount=formcount+1
         br.select_form(nr=formcount)
 #br.select_form('form')
-        br.form[ 'db' ] = 'garfield'
+        br.form[ 'db' ] = ['garfield',]
 
 #Get the search results
 
