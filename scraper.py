@@ -14,7 +14,7 @@ for f in br.forms():
 br.select_form( 'db' )
 br.form[ 'db' ] = 'garfield'
 
-Get the search results
+#Get the search results
 
 br.submit()
     
