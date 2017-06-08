@@ -11,13 +11,13 @@ br.open("http://www.oscn.net/dockets/Search.aspx")
 for f in br.forms():
     print f
 
-'''formcount=0
+formcount=0
 for frm in br.forms():  
-if str(frm.attrs["id"])=="sblock":
+if str(frm.attrs["class"])=="search-form":
     break
     formcount=formcount+1
-br.select_form(nr=formcount)'''
-br.select_form('form')
+br.select_form(nr=formcount)
+#br.select_form('form')
 br.form[ 'db' ] = 'garfield'
 
 #Get the search results
