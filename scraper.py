@@ -60,8 +60,8 @@ print br
 response = br.submit()
 html = response.read()
 print html
-#root = lxml.html.fromstring(html)
-#scrape_table(root)
+root = lxml.html.fromstring(html)
+scrape_table(root)
 
     
     
