@@ -39,6 +39,9 @@ br.set_handle_robots( False )
 br.open("http://www.oscn.net/dockets/Search.aspx")
 #for f in br.forms():
     #print f
+for form in br.forms():
+    print "Form name:", form.name
+    print form
 
 '''formcount=0
 for frm in br.forms():  
