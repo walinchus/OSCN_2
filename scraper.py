@@ -63,8 +63,8 @@ for frm in br.forms():
 #print br.form
 br.form = list(br.forms())[0] 
 br['db'] = ['garfield']
-br['lname'] = ['Smith']
-br['fname'] = ['William']
+br['lname'] = str(['Smith'])
+br['fname'] = str(['William'])
 print br
 response = br.submit()
 html = response.read()
