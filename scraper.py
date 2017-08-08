@@ -64,9 +64,9 @@ for frm in br.forms():
 br.form = list(br.forms())[0] 
 br['db'] = ['garfield']
 br['dcct'] = ['32']
-br['lname'] = str(['Smith'])
+br['lname'] = str(['SMITH'])
 #br['mname'] = str(['Middle name'])
-br['fname'] = str(['William'])
+br['fname'] = str(['WILLIAM'])
 print br
 response = br.submit()
 html = response.read()
