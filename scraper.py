@@ -53,8 +53,9 @@ for frm in br.forms():
 
         br.submit()'''
 
-br.select_form(nr=0)
-print br.form
+#br.select_form(nr=0)
+#print br.form
+br.form = list(br.forms())[0] 
 br['db'] = ['garfield']
 br['lname'] = ['Smith']
 br['fname'] = ['William']
