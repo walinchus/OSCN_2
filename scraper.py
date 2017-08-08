@@ -56,6 +56,8 @@ for frm in br.forms():
 br.select_form(nr=0)
 print br.form
 br['db'] = ['garfield']
+br['lname'] = ['Smith']
+br['fname'] = ['William']
 print br
 response = br.submit()
 html = response.read()
