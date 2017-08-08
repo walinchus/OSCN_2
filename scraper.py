@@ -37,8 +37,8 @@ def scrape_table(root):
 br = mechanize.Browser()
 br.set_handle_robots( False )
 br.open("http://www.oscn.net/dockets/Search.aspx")
-for f in br.forms():
-    print f
+#for f in br.forms():
+    #print f
 
 '''formcount=0
 for frm in br.forms():  
@@ -53,7 +53,7 @@ for frm in br.forms():
 
         br.submit()'''
 
-br.select_form(nr=1)
+br.select_form(nr=0)
 print br.form
 br['db'] = ['garfield']
 br['lname'] = ['Smith']
