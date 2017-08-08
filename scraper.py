@@ -64,7 +64,7 @@ for frm in br.forms():
 br.form = list(br.forms())[0] 
 br['db'] = ['garfield']
 br['dcct'] = ['32']
-br['lnAME'] = [str('SMITH')]
+br['lname'] = [str('SMITH')]
 #br['mname'] = str(['Middle name'])
 #br['fname'] = str(['WILLIAM'])
 print br
